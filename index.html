@@ -1,28 +1,230 @@
 <!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<title> starpup landing page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+  <head>
+    <title>Pramod's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
+        <nav>
+          <ul>
+            <li><a href="#intro">Welcome</a></li>
+            <li><a href="#one">Projects</a></li>
+            <!-- <li><a href="#two">Hire Me!!</a></li> -->
+            <li><a href="#three">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-</head>
-<body>
-<!-- Begin Mailchimp Signup Form -->
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://gmail.us20.list-manage.com/subscribe/post?u=36bed2c67361e91b60e303c51&amp;id=53d150747c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div class="button"><input class="btn btn-warning" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+          <h1>Venkata Sai Pramod Reddy Guntaka</h1>
+          <p>
+            A software engineer with expertise in Git, Python, Machine Learning
+            and Cloud computing. AWS Certified Solutions Architect. Built a
+            Twitter Sentiment Analysis app from scratch.
+          </p>
+          <p>
+            This is a showcase of my projects and my abilities
+          </p>
+          <p>
+            <a
+              href="https://github.com/Pramodnani"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+            &nbsp;&nbsp;
+            <a
+              href="https://www.linkedin.com/in/PramodGuntaka/"
+              class="icon brands fa-linkedin-in"
+              ><span class="label">LinkedIn</span></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- One -->
+
+      <!-- Two -->
+      <section id="one" class="wrapper style3 fade-up">
+        <div class="inner">
+          <h2>Projects</h2>
+          <p>
+            The following projects are either hosted on Heroku or their servers
+          </p>
+          <div class="features">
+            <section>
+              <span class="icon solid major fa-gem"></span>
+              <h3>Twitter Sentiment Analysis for Covid-19</h3>
+              <p>
+                I developed a Twitter sentiment Dashboard for Covid19 tweets in
+                Kansas using the Dash python framework and deployed it using
+                NGINX server.
+              </p>
+
+              <ul>
+                <li>
+                  The data (tweets with the keyword <strong>Covid-19</strong>)
+                  is collected using a Python script which makes use of the
+                  <a
+                    href="https://pypi.org/project/GetOldTweets3/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >GetOldTweets3
+                  </a>
+                  library.
+                </li>
+                <li>
+                  The collection runs everyday at 12.01 AM and slices off the
+                  current day's tweets.
+                </li>
+                <li>
+                  Bash scripts are controlled by crontab schedulers to execute
+                  the data collection process.
+                </li>
+                <li>
+                  Tech Stack used: Python, Dash, Dash routing, Plotly, TextBlob
+                </li>
+              </ul>
+            </section>
+            <section>
+              <!-- <span class="icon solid major fa-face"></span> -->
+              <span class="icon solid major fa-biohazard"></span>
+              <h3>Face to BMI</h3>
+              <p>
+                To investigate computer vision methods for Body Mass Index
+                inference from facial images using pre- trained and end-to-end
+                Convolutional Neural Networks.
+              </p>
+              <ul>
+                <li>
+                  Implemented face detection using Dlib, OpenCV-Haarcascades.
+                </li>
+                <li>
+                  Used transfer learning methodology to optimize and get better
+                  performance of the model.
+                </li>
+                <li>
+                  Trained CNN’s like Resnet, Mobilenet, VGG16 used to extract
+                  the facial features from image.
+                </li>
+                <li>
+                  Investigated different Machine learning models (Adaboost,
+                  Ridge Regression, SVR, Random Forest Regressor) to infer Body
+                  Mass Index from facial features and deployed on AWS EC2
+                  instance.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <span class="icon solid major fa-person-booth"></span>
+              <h3>Electronics Voting Machine</h3>
+              <p>
+                Designed a real time system using AT89S52 microcontroller to
+                store and reset values of votes casted.
+              </p>
+              <ul>
+                <li>
+                  Worked on Power Supply and LCD display modules to power the
+                  real time system and display votes.
+                </li>
+                <li>
+                  Worked on tools like Keil software, Embedded C to Architecture
+                  Electronics Voting Machine
+                </li>
+              </ul>
+            </section>
+          </div>
+          <ul class="actions">
+            <li>
+              <a href="https://github.com/Pramodnani" class="button"
+                ><i class="icon brands fa-github"></i> To my Github profile</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+          <h2>Contact</h2>
+          <ul class="contact">
+            <li>
+              <h3>Address</h3>
+              <span>Wichita, KS</span>
+            </li>
+            <li>
+              <h3>Email</h3>
+              <a href="mailto:pramodreddy97@gmail.com"
+                >pramodreddy97@gmail.com</a
+              >
+            </li>
+            <li>
+              <h3>Phone</h3>
+              <span>(731) 796-6866</span>
+            </li>
+            <li>
+              <h3>Social</h3>
+              <ul class="icons">
+                <li>
+                  <a
+                    href="https://github.com/Pramodnani"
+                    class="icon brands fa-github"
+                    ><span class="label">GitHub</span></a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/PramodGuntaka/"
+                    class="icon brands fa-linkedin-in"
+                    ><span class="label">LinkedIn</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-</form>
-</div>
 
-<!--End mc_embed_signup-->
-<div class="bg">
-	<h1>Ideas are worth sharing </h1><br>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>
+            &copy; Venkata Sai Pramod Reddy Guntaka. All rights reserved. 2020.
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
